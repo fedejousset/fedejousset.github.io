@@ -6,20 +6,20 @@ tags: [dynamics365, postman]     # TAG names should always be lowercase
 img_path: /assets/img/posts/2018-09-17-dynamics-365-web-api-postman-collection
 ---
 
-I started to use Postman probably four years ago and it immediately became the only reason why this Firefox fanboy began to use Chrome (it was first developed as a Chrome App). A lot has changed with Postman since those old days, but it’s still is extremely useful while developing or testing API’s.
+I started to use [Postman](https://www.getpostman.com/) probably four years ago and it immediately became the only reason why this Firefox fanboy began to use Chrome (it was first developed as a Chrome App). A lot has changed with Postman since those old days, but it’s still is extremely useful while developing or testing API’s.
 
-I was pleased when Microsoft recently added the Use Postman with Web API section to the documentation but it’s not widely known so I’ve created a custom Postman collection (environment and collection with sample requests) to simplify the process.
+I was pleased when Microsoft recently added the [Use Postman with Web API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/use-postman-web-api) section to the documentation but it’s not widely known so I’ve created a custom Postman collection ([environment](https://www.getpostman.com/docs/v6/postman/environments_and_globals/manage_environments) and [collection](https://www.getpostman.com/docs/v6/postman/collections/intro_to_collections) with sample requests) to simplify the process.
 
 # Prerequisites
 
-To use this collection, you need to download and install Postman and also register an Azure Active Directory Application to connect and authenticate user accounts. If you haven’t done this before, follow this walk-through making sure that Implicit Authentication is enabled (this can be done updating the Application manifest once created):
+To use this collection, you need to download and install [Postman](https://www.getpostman.com/) and also register an Azure Active Directory Application to connect and authenticate user accounts. If you haven’t done this before, follow this [walk-through](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory) making sure that Implicit Authentication is enabled (this can be done updating the Application manifest once created):
 
 ![Update manifest](1-manifest.png)
 _Updating manifest to allow OAuth Implicit Flow_
 
 # Importing/Configuring D365 Web API Collection
 
-The first step is to [download and import](https://github.com/fedejousset/Dynamics365WebApiPostmanCollection "download and import") the Dynamics 365 Web API collection using the Run in Postman button from its [GitHub repository](https://github.com/fedejousset/Dynamics365WebApiPostmanCollection "GitHub repository"):
+The first step is to [download and import](https://github.com/fedejousset/Dynamics365WebApiPostmanCollection) the Dynamics 365 Web API collection using the Run in Postman button from its [GitHub repository](https://github.com/fedejousset/Dynamics365WebApiPostmanCollection):
 
 ![Run in Postman](2-download.png)
 _Use the Run In Postman button to download the collection_
@@ -29,7 +29,7 @@ This button will open Postman and import the “Dynamics 365 CE Web API” colle
 ![Import collection](3-import.png)
 _Collection and Environment imported_
 
-Once imported, you need to configure the environment to connect to your Dynamics 365 instance updating the required [environment variables](https://www.postman.com/docs/v6/postman/environments_and_globals/variables "environment variables"):
+Once imported, you need to configure the environment to connect to your Dynamics 365 instance updating the required [environment variables](https://www.postman.com/docs/v6/postman/environments_and_globals/variables):
 
  - **ApplicationId**: Azure Application ID used to authenticate the user (variable format: 9f0e560f-4f2e-4a56-afb8-af72f9f20d06)
  - **RedirectUrl**: Redirect URL configured in the Azure AD Application (variable format: https://localhost)
@@ -85,11 +85,11 @@ _Response_
 
 I know it feels like a lot of steps, but once you get familiar with the authentication process you will be able to do it in just a few seconds:
 
-![Full authentication process](8-full.gif)
+![Full authentication process](9-full.gif)
 _Full authentication process_
 
 After getting a successful response you’re ready to start playing around with the sample requests or create your owns. Please remember that the access token will expire after one hour (unless configured otherwise in Azure AD) and you will need to get a new one following the previous steps.
 
-The samples in the collection only cover the most common cases I’ve faced over the last couple of weeks so if you want to include new ones, I’ll be waiting for your Pull Requests in [GitHub ](https://github.com/fedejousset/Dynamics365WebApiPostmanCollection "GitHub").
+The samples in the collection only cover the most common cases I’ve faced over the last couple of weeks so if you want to include new ones, I’ll be waiting for your Pull Requests in [GitHub ](https://github.com/fedejousset/Dynamics365WebApiPostmanCollection).
 
-On a final note, collections don’t automatically sync when they are updated so if you found this collection useful, you should check periodically the [GitHub repository](https://github.com/fedejousset/Dynamics365WebApiPostmanCollection "GitHub repository") for new versions and download/import it as explained before.
+On a final note, collections don’t automatically sync when they are updated so if you found this collection useful, you should check periodically the [GitHub repository](https://github.com/fedejousset/Dynamics365WebApiPostmanCollection) for new versions and download/import it as explained before.
