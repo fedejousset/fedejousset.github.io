@@ -29,11 +29,25 @@ This button will open Postman and import the “Dynamics 365 CE Web API” colle
 ![Import collection](3-import.png)
 _Collection and Environment imported_
 
-Once imported, you need to configure the environment to connect to your Dynamics 365 instance updating the required [environment variables](https://www.postman.com/docs/v6/postman/environments_and_globals/variables):
+Once imported, you need to configure the environment to connect to your Dynamics 365 instance updating the required [environment variables](https://www.postman.com/docs/v6/postman/environments_and_globals/variables).
 
- - **ApplicationId**: Azure Application ID used to authenticate the user (variable format: 9f0e560f-4f2e-4a56-afb8-af72f9f20d06)
- - **RedirectUrl**: Redirect URL configured in the Azure AD Application (variable format: https://localhost)
- - **Resource**: Dynamics 365 Organization that has been configured in the AAD Application Delegated Permissions section (variable format: https://yourorg.crm4.dynamics.com)
+## Required Environment Variables
+
+| **Variable** | **Description** |
+| ----------- | --------------- |
+| `OAuth2Endpoint` | The OAuth 2.0 Token Endpoint from Azure AD - only needed if playing with Auth requests|
+| `ApplicationId` | Azure Application ID used to authenticate the user or client|
+| `RedirectUrl` | Redirct URL configured in the Azure AD Application|
+| `Resource` | Dynamics 365 Organization that has been configured in the AAD Application Delegated Permissions section. For intance, `https://yourorg.crm4.dynamics.com`|
+
+
+## Other Environment Variables
+
+| **Variable** | **Description** |
+| ----------- | --------------- |
+| `WebAPIUrl` | This variable holds the Web API Url (defaulted to "v9.0" but can be updated to use a different version)|
+| `GlobalWebApiUrl` | This **GLOBAL** variable holds the Web API Url and it's only used for batch operations (RAW body doesn't support environment variables). It gets populated with a pre-request script based on the Environment being used so it's environment safe|
+
 
  To update these values, please follow the steps described in the image:
 
@@ -53,7 +67,7 @@ The collection contains 40+ template requests to allow you to quickly compose an
 
 Before executing any of these requests, you need to authenticate yourself against the Dynamics 365 instance:
 
-1.  Click on the ellipses (…) next to the collection and select "Edit":
+1. Click on the ellipses (…) next to the collection and select "Edit":
 
 ![Update variables](5-edit.png)
 _Update environment_
