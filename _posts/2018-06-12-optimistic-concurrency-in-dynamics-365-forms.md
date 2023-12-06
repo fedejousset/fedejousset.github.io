@@ -44,7 +44,7 @@ If these two properties are set on the PreOperation stage, Dynamics is going to 
 
 To work around this problem while Microsoft fix it, we can implement our custom check to validate if the RowVersion of the record is different than the one stored in the database and throw an InvalidPluginExecutionException if it’s the case. After doing it, we finally have our optimistic concurrency control in place:
 
-![Working example](2-example.png)
+![Working example](2-example.gif)
 _Example_
 
 You can check the complete plugin implementation (Dynamics 365 solutions included) in [Github](https://github.com/fedejousset/OptimisticConcurrency).
