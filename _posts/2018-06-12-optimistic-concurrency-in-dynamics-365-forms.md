@@ -1,6 +1,6 @@
 ---
 title: Optimistic Concurrency in Dynamics 365 Forms
-date: 2018-06-12s00:00:00 +0300
+date: 2018-06-12 00:00:00 +0300
 categories: [Dynamics 365]
 tags: [dynamics365]     # TAG names should always be lowercase
 img_path: /assets/img/posts/2018-06-12-optimistic-concurrency-in-dynamics-365-forms

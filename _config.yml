@@ -14,9 +14,9 @@ timezone: America/Buenos_Aires
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: fedejousset.dev # the main title
+title: fedejousset # the main title
 
-tagline: A developer's log # it will display as the sub-title
+tagline: A D365 developer's blog # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Explore the world of Dynamics 365 development with expert insights and practical solutions. The blog delves into the intricacies of coding, customization, and innovation within the Dynamics 365 ecosystem.
