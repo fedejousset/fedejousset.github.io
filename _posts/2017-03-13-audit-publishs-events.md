@@ -6,7 +6,7 @@ tags: [dynamics365, plugin, audit]     # TAG names should always be lowercase
 img_path: /assets/img/posts/2017-03-13-audit-publishs-events
 ---
 
-Based on a question that I found in [Stack Overflow](http://stackoverflow.com/questions/39265795/crm-plugin-for-publish-and-publish-all-messages/39291051) I did a little test to see how the Publish and PublishAll events work and what information is available to audit these events using a plugin.
+Based on a question that I found in [Stack Overflow](https://stackoverflow.com/questions/39265795/crm-plugin-for-publish-and-publish-all-messages/39291051) I did a little test to see how the Publish and PublishAll events work and what information is available to audit these events using a plugin.
 
 # Requests involved
 
