@@ -45,7 +45,7 @@ In this case, an [HTTP 404 error code](https://www.w3.org/Protocols/rfc2616/rfc2
 
 # Workaround (or brand-new way of doing it?)
 
-As it was stated before, Microsoft has recognized these errors but they're not going to fix them because it's possible to keep using the change tracking functionality adding the preference header `odata.track-changes</code>. This header and its implementation is defined as part of the [HTTP 404 error code](http://docs.oasis-open.org/odata/odata/v4.0/cs01/part1-protocol/odata-v4.0-cs01-part1-protocol.html#_Toc365046305), and in my opinion it will replace the RetrieveEntityChanges function (which will be possible deprecated in the future).
+As it was stated before, Microsoft has recognized these errors but they're not going to fix them because it's possible to keep using the change tracking functionality adding the preference header `odata.track-changes</code>. This header and its implementation is defined as part of the [HTTP 404 error code](https://docs.oasis-open.org/odata/odata/v4.0/cs01/part1-protocol/odata-v4.0-cs01-part1-protocol.html#_Toc365046305), and in my opinion it will replace the RetrieveEntityChanges function (which will be possible deprecated in the future).
 
 Let's convert our previous request in the new format:
 
