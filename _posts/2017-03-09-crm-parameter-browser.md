@@ -12,7 +12,7 @@ There's nothing wrong with that answer, but I started to think that it would be 
 
 # Parameter Browser
 
-![ParameterBrowser](1-placeholder.png)
+![ParameterBrowser](parameterbrowser.png)
 _ParameterBrowser_
 
 # Extraction Query
@@ -21,6 +21,8 @@ I based my query in the one available in [Michael Palmer's blog](https://xrmpalm
 You can have a look of it [here](https://gist.github.com/fedejousset/f2cc28665dc7740e31d5bdbc0bf376af).
 
 <script src="https://gist.github.com/fedejousset/f2cc28665dc7740e31d5bdbc0bf376af.js"></script>
+
+{% gist f2cc28665dc7740e31d5bdbc0bf376af %}
 
 # Final comments
 
