@@ -18,8 +18,6 @@ _ParameterBrowser_
 # Extraction Query
 I based my query in the one available in [Michael Palmer's blog](https://xrmpalmer.wordpress.com/2013/05/27/crm2011-plugin-inputparameter-and-outputparameter-helper/). I added a couple of columns and played a little bit with the types' name (to make them more readable) but basically the query is the same.
 
-You can have a look of it [here](https://gist.github.com/fedejousset/f2cc28665dc7740e31d5bdbc0bf376af):
-
 {% gist f2cc28665dc7740e31d5bdbc0bf376af %}
 
 # Final comments
