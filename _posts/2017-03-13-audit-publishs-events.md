@@ -18,7 +18,8 @@ In the first request, it's possible to get a list of all the components being pu
 # Plugin
 
 With this in mind, I wrote a really simple plugin to log these events:
-https://gist.github.com/fedejousset/e2695bcf10cfb4b339f1d53d4ac8289c
+
+{% gist e2695bcf10cfb4b339f1d53d4ac8289c %}
 
 Once the plugin is registered in CRM, it's necessary to create the following steps:
 
